@@ -1,16 +1,20 @@
 # songs
 Songs for Encore
 
-## Publishing your charts
-
+## Guidelines
 > [!WARNING]
-> No official songs! These will not be accepted.<br>
+> Songs that are in Fortnite Festival will NOT be accepted!<br>
 > Encore does NOT endorse piracy.
 
-**If your song is quite old, and you have updated it, <br> please update your `info.json` to the new format. <br> You can read about it here: [CHARTS.md](https://github.com/Encore-Developers/Encore/blob/main/CHARTS.md)**
+- **If your chart is uses the legacy json system from before Encore v0.1.3, please update your `info.json` to the new format. <br> You can read about it here: [CHARTS.md](https://github.com/Encore-Developers/Encore/blob/main/CHARTS.md)**
 
-*.ini songs are also supported*
+- **Once Encore 0.2.0 releases - Unless your song only uses PAD instruments, it is *highly* suggested to format your songs in INI, so that they can be played in multiple different games. <br> Otherwise, songs that use only PAD but are in INI won't be accepted because no other games support PAD as of writing.**
+  
+- **Songs must have all instruments of a song charted, excluding Keys, Rhythm, 6-Fret and Pro/Elite Charts. Likewise, all Classic Instruments must have a PAD counterpart. <br> Exceptions are made if the song is notably long or the chart originates from a game that doesn't have a particular instrument, such as the Harmonix Guitar Heros.**
+  
+- **PAD Charts must follow proper charting guidelines. See more here: [Encore PAD Charting](https://docs.google.com/document/d/1Xqi_IR-FYI-PplGYDTO0HWMW_VGBshPFfFgZkps1tRk/edit?usp=sharing)**
 
+## Publishing your charts
 To publish a song, the chart must go under review and be validated.
 In order to publish a song, follow these steps:
 
@@ -20,11 +24,18 @@ In order to publish a song, follow these steps:
 
     ![fork](images/fork.png)
 
+- Make a new branch
+    Inside your new fork, click on the button that says **Main**, after that click on **View All Branches** in the dropdown menu. <br>
+    
+    ![branches](images/selectbranch.png)
+  
+    After you select View All Branches, click on the green button that says **New Branch** then type in the name of your branch, preferably your song name. <br> This process allows you to more easily create pull requests for multiple songs.
+  
 - Archive your song
     
-    Package the `info.json`, stems, and album art into a folder. After, create a ***zip*** archive of the folder.
+    Package the `song.ini`/`info.json`, audio file(s), and album art into a folder. After, create a ***zip*** archive of the folder.
 
-    The limit for uploading files is **100 MB**, as set by GitHub. However, we recommend your zip to be under **20 MB**.
+    The limit for uploading files is **100 MB**, as set by GitHub. However, we recommend your zip to be under **50 MB**.
 
     **Only zip files are accepted. <br> Make sure to add all your files within a folder inside the archive's root.**
 
@@ -63,20 +74,17 @@ In order to publish a song, follow these steps:
     Your chart will be approved after it is verified. If there are any issues, the reviewers will comment on your PR about them.
 
     When your chart is verified and the pull request is merged, you will be able to see it in [FNLookup](https://fnlookup.github.io/encore/), where it will be given an ID.
-
+  
 ## Resources for charting
 
-- [Encore REAPER Template](https://github.com/Encore-Developers/songs/raw/main/images/Encore%20Template.zip)
+- [Encore PAD Charting](https://docs.google.com/document/d/1Xqi_IR-FYI-PplGYDTO0HWMW_VGBshPFfFgZkps1tRk/edit?usp=sharing)
+
+- [Multi-Game INI REAPER Template](https://cdn.discordapp.com/attachments/1239998132427948163/1389545032503136317/Multi-Game_Chart_Template.rpp?ex=68854ee8&is=6883fd68&hm=0cd9881212619a3932aa66a79994a5be55802ca5eed76a534a7b7a0948d1e52d&)
+
+- [Legacy JSON Encore REAPER Template](https://github.com/Encore-Developers/songs/raw/main/images/Encore%20Template.zip)
 
 - [Download REAPER](https://www.reaper.fm/download.php)
 
-- [Guide for charting in REAPER](https://docs.google.com/document/d/1b7KcHJ5uX-jcAjeRTStJRxcEvZ5ohYNOeVvezG03vwA/edit#heading=h.u8vd9w9b6n0y)
+- [Classic Instrument Guide for REAPER](https://docs.google.com/document/d/1b7KcHJ5uX-jcAjeRTStJRxcEvZ5ohYNOeVvezG03vwA/edit#heading=h.u8vd9w9b6n0y)
 
 - [Preview ReaScript](https://github.com/NarrikSynthfox/EncorePreviewer)
-
-### `EVENTS` Track
-Used to identify parts of the song:
-
-- `[music_start]`: Defines when the song starts.
-- `[music_end]`: Defines when the song finishes.
-- `[end]`: Defines when the song ends and the score screen should appear.
