@@ -87,4 +87,7 @@ In order to publish a song, follow these steps:
 
 - [Classic Instrument Guide for REAPER](https://docs.google.com/document/d/1b7KcHJ5uX-jcAjeRTStJRxcEvZ5ohYNOeVvezG03vwA/edit#heading=h.u8vd9w9b6n0y)
 
-- [Preview ReaScript](https://github.com/NarrikSynthfox/EncorePreviewer)
+- [Original Chart Previewer](https://github.com/NarrikSynthfox/EncorePreviewer)
+- [Fork of the Chart Previewer with INI and KEYS Support](https://github.com/WowItsOnlyConnor/EncorePreviewerINI)
+
+- [Pro Vocals Previewer](https://github.com/tposejank/EncoreVocalPreview)
