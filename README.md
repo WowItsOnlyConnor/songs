@@ -3,7 +3,9 @@ Songs for Encore
 
 ## Guidelines
 > [!WARNING]
-> Songs that are in Fortnite Festival will NOT be accepted!<br>
+> Songs that are officially in *active plastic instrument games* will not be accepted
+> Any songs from games that no longer have developer support can be added if they aren't in a active game (such as Fortnite Festival)
+> Songs from YARG as fine as long no assets are taken from YARG specifically.
 > Encore does NOT endorse piracy.
 
 - **If your chart is uses the legacy json system from before Encore v0.1.3, please update your `info.json` to the new format. <br> You can read about it here: [CHARTS.md](https://github.com/Encore-Developers/Encore/blob/main/CHARTS.md)**
